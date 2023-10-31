@@ -1,0 +1,23 @@
+{
+  "name": "doatcolom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taniasultana-dev/doatcolom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taniasultana-dev/doatcolom/issues"
+  },
+  "homepage": "https://github.com/taniasultana-dev/doatcolom#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
