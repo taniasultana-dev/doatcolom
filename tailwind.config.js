@@ -42,7 +42,7 @@ module.exports = {
       },
       backgroundImage: {
         'linear-primary':'linear-gradient(180deg, #517DFC 0%, #0A42C6 100%)',
-        'image-bg':"url(./../images/frame100.png)",
+        'image-bg':"url(./../images/join-right.png)",
       },
     },
   },
