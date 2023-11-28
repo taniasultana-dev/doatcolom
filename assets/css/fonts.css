@@ -1,0 +1,68 @@
+/* font-Lato */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato'),url(../fonts/lato/Lato-Regular.woff2) format('woff2');
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: bold;
+    font-weight: 700;
+    src: local('Lato'),url(../fonts/lato/Lato-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: black;
+    font-weight: 900;
+    src: local('Lato'),url(../fonts/lato/Lato-Black.woff2) format('woff2');
+}
+
+/* font-Inter */
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato'),url(../fonts/inter/Inter-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: Medium;
+    font-weight: 500;
+    src: local('Lato'),url(../fonts/inter/Inter-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: SemiBold;
+    font-weight: 600;
+    src: local('Lato'),url(../fonts/inter/Inter-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: Bold;
+    font-weight: 700;
+    src: local('Lato'),url(../fonts/inter/Inter-Bold.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style: Bold;
+    font-weight: 700;
+    src: local('Lato'),url(../fonts/inter/Inter-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: ExtraBold;
+    font-weight: 800;
+    src: local('Lato'),url(../fonts/inter/Inter-ExtraBold.woff2) format('woff2');
+}
+
