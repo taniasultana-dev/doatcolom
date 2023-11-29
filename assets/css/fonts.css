@@ -39,7 +39,7 @@
 
 @font-face {
     font-family: 'Inter';
-    font-style: SemiBold;
+    font-style: 600;
     font-weight: 600;
     src: local('Lato'),url(../fonts/inter/Inter-SemiBold.woff2) format('woff2');
 }
@@ -61,7 +61,7 @@
 
 @font-face {
     font-family: 'Inter';
-    font-style: ExtraBold;
+    font-style: 800;
     font-weight: 800;
     src: local('Lato'),url(../fonts/inter/Inter-ExtraBold.woff2) format('woff2');
 }

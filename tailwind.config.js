@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary:'000000',
+        primary:'#000000',
         blue:'#517DFC',
         blue1:'#0583D2',
         blue2:'#0082FF',
@@ -42,7 +42,7 @@ module.exports = {
       },
       backgroundImage: {
         'linear-primary':'linear-gradient(180deg, #517DFC 0%, #0A42C6 100%)',
-        'image-bg':"url(./../images/join-right.png)",
+        'image-bg':"url(./../assets/images/join-right.png)",
       },
     },
   },
