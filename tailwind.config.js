@@ -22,12 +22,13 @@ module.exports = {
         pink:'#FFF8EB',
         black200:'#0C131A',
         whitebg:'#F9F9F9',
-
-
+      },
+      container: {
+        center: true,
+        padding: '1rem',
       },
       screens:{
-        xs: '320px',
-        sm: '640px',
+        sm: '575px',
         md: '768px',
         lg: '1024px',
         xl: '1280px'
