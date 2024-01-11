@@ -27,28 +27,28 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: local('Lato'),url(../fonts/inter/Inter-Regular.woff2) format('woff2');
+    src: local('inter'),url(../fonts/inter/Inter-Regular.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Inter';
     font-style: Medium;
     font-weight: 500;
-    src: local('Lato'),url(../fonts/inter/Inter-Medium.woff2) format('woff2');
+    src: local('Inter'),url(../fonts/inter/Inter-Medium.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Inter';
     font-style: 600;
     font-weight: 600;
-    src: local('Lato'),url(../fonts/inter/Inter-SemiBold.woff2) format('woff2');
+    src: local('Inter'),url(../fonts/inter/Inter-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Inter';
     font-style: Bold;
     font-weight: 700;
-    src: local('Lato'),url(../fonts/inter/Inter-Bold.woff2) format('woff2');
+    src: local('Inter'),url(../fonts/inter/Inter-Bold.woff2) format('woff2');
 }
 
 
@@ -56,13 +56,91 @@
     font-family: 'Inter';
     font-style: Bold;
     font-weight: 700;
-    src: local('Lato'),url(../fonts/inter/Inter-Bold.woff2) format('woff2');
+    src: local('inter'),url(../fonts/inter/Inter-Bold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Inter';
     font-style: 800;
     font-weight: 800;
-    src: local('Lato'),url(../fonts/inter/Inter-ExtraBold.woff2) format('woff2');
+    src: local('Inter'),url(../fonts/inter/Inter-ExtraBold.woff2) format('woff2');
+}
+/*font poppins*/
+@font-face {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('poppins'),url(../fonts/poppins/Poppins-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('poppins'),url(../fonts/poppins/Poppins-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('poppins'),url(../fonts/poppins/Poppins-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('poppins'),url(../fonts/poppins/Poppins-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: local('poppins'),url(../fonts/poppins/Poppins-ExtraBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: local('poppins'),url(../fonts/poppins/Poppins-Black.woff2) format('woff2');
+}
+
+/*public sans*/
+@font-face {
+    font-family: 'public-sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('public-sans'),url(../fonts/public-sans/PublicSans-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'public-sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('public-sans'),url(../fonts/public-sans/PublicSans-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'public-sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('public-sans'),url(../fonts/public-sans/PublicSans-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'public-sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('public-sans'),url(../fonts/public-sans/PublicSans-ExtraBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'public-sans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('public-sans'),url(../fonts/public-sans/PublicSans-Black.woff2) format('woff2');
 }
 

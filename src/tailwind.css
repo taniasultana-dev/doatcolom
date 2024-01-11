@@ -1,3 +1,121 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial-carousel .draggable {
+    padding: 10px 0 40px 0;
+}
+
+.testimonial-carousel .left-arrow {
+    opacity: 10%;
+    position: absolute;
+    top: 96%;
+    left: 30%;
+    
+}
+
+@media (min-width:700px){
+    .testimonial-carousel .left-arrow {
+        top: -100px;
+        left: unset;
+        right: 90px; 
+    }
+}
+
+.testimonial-carousel .right-arrow {
+   position: absolute;
+   top: 96%;
+   left: 50%;
+    
+}
+
+@media (min-width:700px){
+    .testimonial-carousel .right-arrow {
+        top: -100px;
+        left: unset;
+        right: 25px; 
+    }
+}
+
+.customers-carousel {
+    position: relative;
+}
+
+.customers-carousel .left-arrow {
+    display: none !important;
+}
+@media (min-width:700px){
+    .customers-carousel .left-arrow {
+        opacity: 10%;
+        position: absolute;
+        top: -100px;
+        left: 30px;
+        display: block !important;
+    }
+}
+
+.customers-carousel .right-arrow {
+    display: none !important;
+     
+ }
+
+ @media (min-width:700px){
+    .customers-carousel .right-arrow {
+        position: absolute;
+        top: -100px;
+        right: 30px;
+        display: block !important;
+    }
+ }
+
+ .customers-carousel .slick-slide {
+    height: 70%;
+}
+
+
+.btn-content {
+    display: none;
+}
+
+.btn-content.active {
+    display: grid;
+}
+
+.tab-btn .active{
+    border-bottom: 2px solid #7B68EE;
+}
+
+.header-btn .active {
+    border-bottom: 2px solid #7B68EE;
+}
+
+.button-content {
+    display: none;
+}
+
+.button-content.active {
+    display: block;
+}
+
+.primary-btn-content{
+    display: none;
+}
+
+.primary-btn-content.active{
+    display: grid;
+}
+
+.feature-btn .active {
+    border-bottom: 2px solid #7B68EE;
+}
+
+.feature-button .active {
+    border-bottom: 2px solid #7B68EE;
+}
+
+ 
