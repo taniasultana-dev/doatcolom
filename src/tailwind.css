@@ -118,4 +118,19 @@
     border-bottom: 2px solid #7B68EE;
 }
 
+.accordian.active {
+  border: none;
+  box-shadow: 0 12px 48px -34px #919EAB;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.answer {
+    display: none;
+}
+
+.answer.active {
+    display: block;
+}
+
  

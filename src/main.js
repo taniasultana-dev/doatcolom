@@ -113,3 +113,17 @@ buttons.forEach((button,index)=>{
 
 });
 
+const accordians  = document.querySelectorAll('.accordian');
+const answers = document.querySelectorAll('.answer');
+
+accordians.forEach((accordian,index)=>{
+    accordian.addEventListener('click',(e) => {
+        accordians.forEach(accordian =>{accordian.classList.remove('active')});
+        accordian.classList.add('active');
+
+        answers.forEach(content=>{content.classList.remove('active')})
+        answers[index].classList.add('active');
+    });
+
+});
+
