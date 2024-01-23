@@ -11,6 +11,7 @@ module.exports = {
         blue3:'#324F6C',
         blue4:'#2E60E1',
         blue5:'#7B68EE',
+        blue6:'#3366FF',
         gray:'#575757',
         gray1:'#00000014',
         gray2:'#6D7176',
@@ -35,11 +36,15 @@ module.exports = {
         sky5:'#F3FCF9',
         sky6:'#F7F9FD',
         sky7:'#6892FF',
+        sky8:'#F5F8FF',
+        sky9:'#0FA3F6',
         green:'#2BB083',
+        green1:'#00AB55',
         pink:'#FFF8EB',
         pink1:'#FFF5F8',
         pink2:'#FF6895',
         whitebg:'#F9F9F9',
+        brown:'#B78103'
       },
       container: {
         center: true,
@@ -56,7 +61,9 @@ module.exports = {
         '4xl':'0px 1px 0px 0px #092E97',
         '5xl':'0 3px 0 1px #00000014',
         '6xl':'0 24px 48px #919EAB',
-        '7xl':'0 8px 12px #919EAB'
+        '7xl':'0 8px 12px #919EAB',
+        '8xl':'20px 0px 20px -4px #919EAB',
+        '9xl':'0 0 4px #000000'
       },
       fontFamily: {
         lato: ['Lato','sans-serif'],
