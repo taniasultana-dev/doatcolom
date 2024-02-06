@@ -75,35 +75,35 @@
 
 @font-face {
     font-family: 'poppins';
-    font-style: normal;
+    font-style: Medium;
     font-weight: 500;
     src: local('poppins'),url(../fonts/poppins/Poppins-Medium.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'poppins';
-    font-style: normal;
+    font-style: 600;
     font-weight: 600;
     src: local('poppins'),url(../fonts/poppins/Poppins-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'poppins';
-    font-style: normal;
+    font-style: bold;
     font-weight: 700;
     src: local('poppins'),url(../fonts/poppins/Poppins-Bold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'poppins';
-    font-style: normal;
+    font-style: 800;
     font-weight: 800;
     src: local('poppins'),url(../fonts/poppins/Poppins-ExtraBold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'poppins';
-    font-style: normal;
+    font-style: 900;
     font-weight: 900;
     src: local('poppins'),url(../fonts/poppins/Poppins-Black.woff2) format('woff2');
 }
@@ -118,29 +118,75 @@
 
 @font-face {
     font-family: 'public-sans';
-    font-style: normal;
+    font-style: 600;
     font-weight: 600;
     src: local('public-sans'),url(../fonts/public-sans/PublicSans-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'public-sans';
-    font-style: normal;
+    font-style: bold;
     font-weight: 700;
     src: local('public-sans'),url(../fonts/public-sans/PublicSans-Bold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'public-sans';
-    font-style: normal;
+    font-style: 800;
     font-weight: 800;
     src: local('public-sans'),url(../fonts/public-sans/PublicSans-ExtraBold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'public-sans';
-    font-style: normal;
+    font-style: 900;
     font-weight: 900;
     src: local('public-sans'),url(../fonts/public-sans/PublicSans-Black.woff2) format('woff2');
+}
+
+/*Be-vietnum*/
+@font-face {
+    font-family: 'Be-vietnum';
+    font-style: normal;
+    font-weight: 400;
+    src: local('public-sans'),url(../fonts/be-vietnum/BeVietnamPro-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Be-vietnum';
+    font-style: Medium;
+    font-weight: 500;
+    src: local('public-sans'),url(../fonts/be-vietnum/BeVietnamPro-Medium.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Be-vietnum';
+    font-style: 600;
+    font-weight: 600;
+    src: local('public-sans'),url(../fonts/be-vietnum/BeVietnamPro-SemiBold.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Be-vietnum';
+    font-style: bold;
+    font-weight: 700;
+    src: local('public-sans'),url(../fonts/be-vietnum/BeVietnamPro-Bold.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Be-vietnum';
+    font-style: 800;
+    font-weight: 800;
+    src: local('public-sans'),url(../fonts/be-vietnum/BeVietnamPro-ExtraBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Be-vietnum';
+    font-style: 900;
+    font-weight: 900;
+    src: local('public-sans'),url(../fonts/be-vietnum/BeVietnamPro-Black.woff2) format('woff2');
 }
 

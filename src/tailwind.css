@@ -134,4 +134,71 @@
 }
 
 
+.currency-btn {
+    opacity: 60%;
+}
+
+.currency-btn.active{
+    background-color: white;
+    padding: 15px 0;
+    border: 1px solid green;
+    border-radius: 24px;
+    opacity: 100%;
+
+}
+.currency-image{
+    display: none;
+}
+
+.currency-image.active{
+    display: block;
+}
+
+.pricing.active {
+    background: linear-gradient(180deg, #517DFC 0%, #0A42C6 100%);
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+}
+
+
  
+.lifetime {
+    display: none;
+}
+
+.doatkolom-btn .active {
+    border-bottom: 2px solid green;
+}
+
+.button {
+    color: #637381;
+}
+
+.button.active {
+    color: #212B36;
+}
+
+.list {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.list.active {
+    background-color: rgba(145, 158, 171, 12%) ;
+
+}
+
+.table.active {
+    background-color: white;
+}
+
+.counter {
+    counter-reset: my-counter;
+}
+
+.counters-number::before {
+    content:""counter(my-counter)".";
+    counter-increment: my-counter;
+}
+

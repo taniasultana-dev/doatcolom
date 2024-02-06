@@ -48,7 +48,7 @@ jQuery( function ($){
             }
 
         ]
-    });    
+    });
 });
 
 const secondaryBtns =document.querySelectorAll('.secondary-btn');
@@ -127,3 +127,52 @@ accordians.forEach((accordian,index)=>{
 
 });
 
+const currencys = document.querySelectorAll('.currency-btn');
+const imges = document.querySelectorAll('.currency-image')
+
+currencys.forEach((currency,index)=>{
+    currency.addEventListener('click',(e) => {
+        currencys.forEach(currency =>{currency.classList.remove('active')});
+        currency.classList.add('active');
+
+        imges.forEach(content=>{content.classList.remove('active')})
+        imges[index].classList.add('active');
+    });
+
+});
+
+
+const year= document.querySelector('.pricing.year');
+const life = document.querySelector('.pricing.life');
+const yearly = document.querySelectorAll ('.yearly');
+const lifetime =document.querySelectorAll('.lifetime');
+  
+life.onclick = () => {
+    life.classList.add('active');
+    year.classList.remove('active');
+
+    yearly.forEach(y =>{y.style.display ='none'});
+    lifetime.forEach(l =>{l.style.display ='block'});
+        
+};
+
+year.onclick = () => {
+    life.classList.remove('active');
+    year.classList.add('active');
+
+    yearly.forEach(y =>{y.style.display ='block'});
+    lifetime.forEach(l =>{l.style.display ='none'});
+        
+};
+
+const tables = document.querySelectorAll('.table');
+tables.forEach((t,index)=>{
+    console.log(t);
+    t.addEventListener('click',() => {
+        tables.forEach(t=>{t.classList.remove('active')});
+        t.classList.add('active');
+
+    
+    });
+
+});

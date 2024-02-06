@@ -32,10 +32,10 @@
                             <a href="index.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">home</a>
                         </li>
                         <li class="inline-block">
-                            <a href="#" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">Products</a>
+                            <a href="service.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">service</a>
                         </li>
                         <li class="inline-block">
-                            <a href="#" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">Blog</a>
+                            <a href="blog.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">Blog</a>
                         </li>
                         <li class="inline-block">
                             <a href="about.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold">About</a>
@@ -286,8 +286,7 @@
                 </div>
                 <div class="grid lg:grid-cols-2 mx-10">
                     <div class="sm:ml-5">
-                        <div class="bg-white py-3 border-[1px] border-green rounded-3xl mt-3 mb-6">
-                            <div class="flex">
+                            <div class="flex currency-btn active mb-6 mt-3">
                                 <div>
                                     <img width="48" height="48" loading="lazy" src="./assets/images/webp/currency.webp" alt="currency.webp">
                                 </div>
@@ -296,19 +295,19 @@
                                     <p class="text-base font-inter font-normal text-black500 max-w-[313px]">Lorem ipsum dolor sit amet consectetur. Tortor felis commodo tincidunt purus gravida pellentesque. </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="flex">
-                            <div class="opacity-60">
+                            <div class="flex currency-btn">
+                            <div>
                                 <img width="48" height="48" loading="lazy" src="./assets/images/webp/currency.webp" alt="currency.webp">
                             </div>
-                            <div class="opacity-60">
+                            <div>
                                 <h5 class="text-xl sm:text-2xl font-lato font-black text-black300 max-w-[313px]">Conditional Payment Gateway</h5>
                                 <p class="text-base font-inter font-normal text-black500 max-w-[313px]">Lorem ipsum dolor sit amet consectetur. Tortor felis commodo tincidunt purus gravida pellentesque. </p>
                             </div>
                         </div>
                     </div>
                     <div class="-order-1 lg:order-1">
-                        <img width="663" width="441px" loading="lazy" src="./assets/images/webp/screen-shot.webp" alt="screen-shot">
+                        <img width="663" width="441px" class="currency-image active" loading="lazy" src="./assets/images/webp/screen-shot.webp" alt="screen-shot">
+                        <img width="663" width="441px" class="currency-image" loading="lazy" src="./assets/images/webp/screen-shot.webp" alt="screen-shot">
                     </div>
                 </div>
             </div>
@@ -424,26 +423,19 @@
                     <div class="text-center">
                         <p class="text-xs sm:text-base font-inter font-bold text-white uppercase">Are you ready?</p>
                         <h1 class="text-[25px] sm:text-[41px] md:text-5xl font-black text-white max-w-[570px] mx-auto mt-4 mb-9">The Best Solution, for the best price</h1>
-                        <div class="max-w-[342px] h-[80px] mx-auto bg-white rounded-lg mb-8">
-                            <div class="flex items-center">
-                                <div class="px-1 mr-1">
-                                    <a href="#" class="bg-linear-primary text-white rounded-lg text-sm font-poppins font-semibold py-6 px-8 sm:px-14">yearly</a>
-                                </div>
-                                <div class="flex justify-center items-center py-7">
-                                    <div class="mr-2">
-                                        <p class="text-sm font-poppins font-semibold text-gray6">Lifetime</p>
-                                    </div>
-                                    <div class="bg-sky4 py-[5px] px-[10px] rounded-2xl">
-                                        <a href="#" class="text-xs font-publicSans font-bold text-transparent bg-clip-text bg-linear-primary px-3 py-1 bg-sky4 transition ease-in duration-300">Save 40%</a>
-                                    </div>
-                                </div>
-                            </div>                         
+                        <div class="max-w-[342px] mx-auto bg-white rounded-lg mb-8 inline-block border-[1px] border-gray7/10 p-1">
+                           <span class="py-4 px-2 inline-block text-gray6 capitaliz active pricing year">Yearly</span>
+                           <span class="py-4 px-2 inline-block text-gray6 capitalize pricing life">lifetime</span>   
+                          <div class="bg-sky4 inline-block py-1 px-2 rounded-2xl">
+                            <a href="#" class="text-xs font-publicSans font-bold text-transparent bg-clip-text bg-linear-primary px-3 py-1">Save 40%</a>
+                          </div>                 
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         <div class="bg-white rounded-2xl shadow-6xl p-10">
                             <h2 class="text-base font-publicSans font-bold text-black400 mb-4">Starter</h2>
-                            <h1 class="text-5xl font-publicSans font-bold text-black400">$9</h1>
+                            <h1 class="text-5xl font-publicSans font-bold text-black400 yearly">$9</h1>
+                            <h1 class="text-5xl font-publicSans font-bold text-black400 lifetime">$30</h1>
                             <p class="text-xs font-publicSans font-bold text-gray7 uppercase mb-6">Per Month, Paid Yearly</p>
                             <a href="#" class="rounded-lg border-[1px] border-blue px-[54px] sm:px-[69px] py-3 text-base font-publicSans font-bold text-transparent bg-clip-text bg-linear-primary transition ease-in duration-300">Choose Plan</a>
                             <p class="text-[13px] leading-5 font-publicSans font-normal text-gray7 mt-6 mb-6">Basic Access with all important features you are looking for</p>
@@ -508,11 +500,15 @@
                                 <div>
                                     <h2 class="text-base font-publicSans font-bold text-black400 mb-4">Pro</h2>
                                 </div>
-                                <div class="bg-sky4 py-[5px] px-[10px] rounded-2xl absolute top-0 right-0">
+                                <div class="bg-sky4 py-[5px] px-[10px] rounded-2xl absolute top-0 right-0 yearly">
                                     <a href="#" class="text-xs font-publicSans font-bold text-transparent bg-clip-text bg-linear-primary px-3 py-1 bg-sky4">you Save 40%</a>
                                 </div>
+                                <div class="bg-sky4 py-[5px] px-[10px] rounded-2xl absolute top-0 right-0 lifetime">
+                                    <a href="#" class="text-xs font-publicSans font-bold text-transparent bg-clip-text bg-linear-primary px-3 py-1 bg-sky4">you Save 60%</a>
+                                </div>
                             </div>
-                            <h1 class="text-5xl font-publicSans font-bold text-black400">$50</h1>
+                            <h1 class="text-5xl font-publicSans font-bold text-black400 yearly">$50</h1>
+                            <h1 class="text-5xl font-publicSans font-bold text-black400 lifetime">$400</h1>
                             <p class="text-xs font-publicSans font-bold text-gray7 uppercase mb-6">Per Month, Paid Yearly</p>
                             <a href="#" class="rounded-lg border-[1px] border-blue px-[54px] sm:px-[69px] py-3 text-base font-publicSans font-bold text-white bg-linear-primary hover:opacity-70 transition ease-in duration-300">Choose Plan</a>
                             <p class="text-[13px] leading-5 font-publicSans font-normal text-gray7 mt-6 mb-6">Basic Access with all important features you are looking for</p>
@@ -574,9 +570,10 @@
                         </div>
                         <div class="bg-white rounded-2xl shadow-6xl p-10">
                             <h2 class="text-base font-publicSans font-bold text-black400 mb-4">Enterprise</h2>
-                            <h1 class="text-5xl font-publicSans font-bold text-black400">$120</h1>
+                            <h1 class="text-5xl font-publicSans font-bold text-black400 yearly">$120</h1>
+                            <h1 class="text-5xl font-publicSans font-bold text-black400 lifetime">$1000</h1>
                             <p class="text-xs font-publicSans font-bold text-gray7 uppercase mb-6">Per Month, Paid Yearly</p>
-                            <a href="#" class="rounded-lg border-[1px] border-blue px-[54px] sm:px-[69px] py-3 text-base font-publicSans font-bold text-transparent bg-clip-text bg-linear-primary hover:bg-linear-primary transition ease-in duration-300">Choose Plan</a>
+                            <a href="#" class="rounded-lg border-[1px] border-blue px-[54px] sm:px-[69px] py-3 text-base font-publicSans font-bold text-transparent bg-clip-text bg-linear-primary  hover:bg-linear-primary transition ease-in duration-300">Choose Plan</a>
                             <p class="text-[13px] leading-5 font-publicSans font-normal text-gray7 mt-6 mb-6">Basic Access with all important features you are looking for</p>
                             <h3 class="text-sm font-publicSans font-bold text-black400 mb-6">Everything in Pro, plus:</h3>
                             <div class="border-b-[1px] border-dashed border-gray7">
@@ -859,9 +856,9 @@
     <section class="py-20 bg-black200 text-white">
         <div class="container mx-auto x-6">
             <div class="flex justify-between border-b-[1px] border-blue3 mb-10">
-                <div class="w-full md:w-1/2">
+                <div class="w-full md:w-1/2 mb-4">
                     <h4 class="text-base  font-black text-white/40 uppercase">Let’s talk.</h4>
-                    <h1 class="text-lg sm:text-[28px] md:text-4xl lg:text-5xl font-bold tightest mt-4 mb-11">Got Any Questions?</h1>
+                    <a href="contact.html" class="text-lg sm:text-[28px] md:text-4xl lg:text-5xl font-bold tightest mt-4">Got Any Questions?</a>
                 </div>
                 <div class="hidden w-full md:w-1/2 md:inline-flex justify-end items-center">
                     <a href="#" class="px-4 py-3 md:px-[18px] md:py-[14px] border-[1px] border-white rounded-lg inline-flex justify-center items-center gap-2 capitalize hover:bg-blue hover:border-none transition ease-in duration-300"> 
@@ -878,7 +875,7 @@
                 <span class="font-black text-yellow100">there's no need to uninstall previous versions or Pro versions when updating.</span>
             </p>
             <div class="md:hidden mt-6">
-                <a href="#" class="w-full px-4 py-3 border-[1px] hover:opacity-70 transition ease-in duration-300 rounded-lg inline-flex justify-center items-center gap-2 capitalize"> 
+                <a href="contact.html" class="w-full px-4 py-3 border-[1px] hover:opacity-70 transition ease-in duration-300 rounded-lg inline-flex justify-center items-center gap-2 capitalize"> 
                     <span class="text-base  font-bold">contact us</span>
                     <svg width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.43 6.69128L20.5 12.7613L14.43 18.8313" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -894,7 +891,7 @@
             <!-----footer top start------->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 text-white mb-12">
                 <div class="mb-10">
-                    <a href="index.html">
+                    <a href="doatkolom.html">
                         <svg width="227" height="49" viewBox="0 0 227 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_325_6339)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0162 0.0837162C17.2291 0.532884 12.3467 2.61644 8.55781 5.82688C2.36526 11.0742 -0.852086 19.3838 0.180866 27.4624C0.9236 33.2706 3.37315 38.1419 7.59748 42.2114C11.3314 45.8084 15.8829 47.9999 21.1902 48.756C23.3657 49.0659 27.0272 48.9483 29.1273 48.5011C35.7132 47.0985 41.1527 43.3786 44.8091 37.7769C48.3106 32.4128 49.5292 25.4875 48.1018 19.0664C46.1237 10.1685 39.1896 2.98791 30.4152 0.751036C27.935 0.118667 24.5279 -0.151977 22.0162 0.0837162ZM28.4124 0.868623C35.763 2.18793 41.9198 6.69611 45.4441 13.3394C48.4129 18.936 48.9909 25.824 47.0031 31.9192C46.1822 34.4364 44.5672 37.441 42.9527 39.4551C38.9927 44.3948 33.1211 47.6435 26.991 48.2869C17.0273 49.3326 7.6626 44.2439 3.09456 35.3018C0.00487434 29.2535 -0.313643 21.9158 2.23618 15.5303C3.98395 11.1536 7.17778 7.19868 11.0752 4.58488C14.1065 2.55213 17.8841 1.11575 21.1763 0.74441C21.8514 0.668271 22.5783 0.581218 22.7915 0.551074C23.6651 0.427251 27.0047 0.616039 28.4124 0.868623ZM22.7915 1.32858C22.5783 1.35768 21.9096 1.44733 21.3055 1.52776C12.9928 2.63502 5.77334 8.51019 2.89259 16.5123C1.84491 19.4225 1.46825 21.9288 1.58273 25.2278C1.7259 29.3507 2.69283 32.6866 4.78432 36.2741L5.32677 37.2046L6.04766 36.8343C6.4941 36.6049 7.07635 36.4327 7.57629 36.3819C8.0204 36.3366 8.38389 36.2735 8.38389 36.2413C8.38389 36.2092 8.26759 36.0342 8.12545 35.8525C7.72217 35.337 7.77489 34.4957 8.24382 33.9676L8.62061 33.5433L11.2701 33.5035L13.9194 33.4636L14.471 32.529C14.7744 32.0149 15.2733 31.218 15.5798 30.7581C16.0328 30.0779 16.137 29.8112 16.1376 29.3289C16.1388 28.4368 16.4751 26.3837 16.7881 25.3577C17.2416 23.8715 18.3826 21.8046 19.4143 20.6007C22.4089 17.1058 26.5424 15.0503 32.6898 13.999C35.4216 13.5317 40.8171 13.1709 40.8171 13.4555C40.8171 13.5407 40.6062 14.1779 40.3483 14.8716C39.0771 18.2917 37.2202 21.2872 34.926 23.6188L33.8245 24.7386L32.6367 24.815C31.9834 24.8571 30.4604 24.8478 29.2523 24.7946C28.0441 24.7412 27.0357 24.7102 27.0113 24.7257C26.77 24.8789 29.3426 25.7146 31.0287 26.0309C31.7216 26.1609 32.2861 26.2964 32.2833 26.3322C32.2745 26.4452 30.7122 27.5612 29.7035 28.175C27.5753 29.4701 25.4421 30.3189 23.2069 30.76C21.919 31.0142 20.401 31.0933 20.401 30.9062C20.401 30.7346 21.4753 29.0378 22.2765 27.9439C24.0755 25.488 25.6453 23.6352 27.8122 21.4105L29.2523 19.9321L28.477 20.4275C24.3228 23.0826 20.5695 26.9322 17.3803 31.8088C16.8385 32.6373 16.3953 33.3518 16.3953 33.3967C16.3953 33.4415 17.4856 33.4787 18.8181 33.4792C20.9952 33.48 21.2793 33.5055 21.6199 33.7312C22.3939 34.2443 22.5641 35.1387 22.0129 35.7973C21.6363 36.2474 21.6466 36.2548 22.8561 36.408C24.3445 36.5964 25.823 37.7577 26.3386 39.1431C26.5832 39.8004 26.6033 40.1428 26.6033 43.6344V47.4143L27.2817 47.3261C35.773 46.2221 42.8749 40.648 45.9321 32.6879C46.4481 31.3446 47.0814 28.8714 47.2708 27.4597C47.4742 25.9435 47.4402 22.3816 47.2081 20.9062C46.0056 13.259 41.254 6.8506 34.327 3.53414C31.3902 2.12816 28.4759 1.42836 25.1596 1.33286C24.0703 1.30142 23.0047 1.2996 22.7915 1.32858ZM171.39 5.39642C170.467 5.84026 170.202 6.11636 169.631 7.23064C169.249 7.97709 169.194 8.21447 169.152 9.30952C169.094 10.8072 169.307 11.4619 170.142 12.3577L170.703 12.9593L170.564 13.5715C170.286 14.7967 169.754 19.0389 169.641 20.9401C169.313 26.4443 169.661 31.2789 170.68 35.3636C171.212 37.4982 171.463 38.1331 171.944 38.5591C172.4 38.9633 172.727 39.0235 173.175 38.785C173.851 38.4253 173.972 38.134 174.494 35.6222C175.437 31.0797 175.432 24.3856 174.482 18.5364C174.239 17.0397 173.703 14.3531 173.524 13.7299C173.324 13.0375 173.353 12.9199 173.91 12.1698C174.404 11.504 174.426 11.4308 174.426 10.512C174.426 9.6884 174.364 9.41749 173.987 8.61907C173.283 7.12527 173.284 7.15788 173.962 6.52291C174.977 5.57196 174.652 5.02352 173.073 5.02378C172.34 5.02378 172.016 5.09563 171.39 5.39642ZM172.4 6.96831C172.333 7.53858 172.382 7.73139 172.823 8.62492C173.216 9.42295 173.322 9.78675 173.325 10.3508L173.328 11.0654L172.424 11.1304C171.926 11.1661 171.299 11.1744 171.031 11.1488C170.35 11.0841 170.118 10.6144 170.185 9.43659C170.229 8.65338 170.296 8.46771 170.83 7.66058C171.349 6.87502 171.974 6.33932 172.385 6.32594C172.435 6.32425 172.442 6.61335 172.4 6.96831ZM172.586 13.5341C172.842 14.5639 173.486 17.858 173.639 18.9262C173.867 20.523 174.039 21.7658 174.039 21.8239C174.039 21.8539 173.501 21.8518 172.844 21.8194C172.186 21.787 171.388 21.8211 171.07 21.8952C170.752 21.9692 170.478 22.0154 170.46 21.9976C170.379 21.916 170.968 16.3604 171.199 15.0283C171.617 12.6196 171.55 12.7992 172.016 12.8445C172.388 12.8809 172.438 12.9411 172.586 13.5341ZM174.088 22.9414C174.25 23.0764 174.297 23.3596 174.297 24.1965C174.297 24.7911 174.247 25.3086 174.186 25.3466C174.074 25.4162 173.922 25.4194 172.617 25.3794C172.227 25.3674 171.572 25.4058 171.164 25.4645L170.421 25.5713V24.2855V22.9998L170.905 22.8563C171.576 22.6577 173.82 22.7178 174.088 22.9414ZM174.154 26.3207C174.302 26.4152 174.321 26.93 174.258 29.2746C174.18 32.2038 173.902 34.555 173.408 36.4667C173.085 37.7184 173.026 37.8602 172.79 37.9513C172.397 38.1029 172.294 37.9176 171.776 36.122C171.159 33.9832 170.628 30.6645 170.473 27.9746L170.387 26.4841L170.953 26.3571C171.674 26.1953 173.917 26.1699 174.154 26.3207Z" fill="#F9FAFB"/>
@@ -967,7 +964,7 @@
                                 <a href="#">Community</a>
                             </li>
                             <li class="text-base font-normal hover:opacity-70 transition ease-in duration-300 tracking-[-1%]">
-                                <a href="#">Contact Us</a>
+                                <a href="contact.html">Contact Us</a>
                             </li>
                         </ul>  
                     </div>
@@ -977,10 +974,10 @@
                         <h1 class="text-base font-black opacity-40 uppercase mb-6">Company</h1>
                         <ul>
                             <li class="text-base font-normal hover:opacity-70 transition ease-in duration-300 tracking-[-1%]">
-                                <a href="#">Affiliate</a>
+                                <a href="elementor.html">Elementor</a>
                             </li>
                             <li class="text-base font-normal hover:opacity-70 transition ease-in duration-300 tracking-[-1%]">
-                                <a href="#">Roadmap</a>
+                                <a href="404.html">404</a>
                             </li>
                             <li class="text-base font-normal hover:opacity-70 transition ease-in duration-300 tracking-[-1%]">
                                 <a href="about.html">About Us</a>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoatKolom</title>
     <link rel="icon" href="./assets/images/icon/favicon.icon" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./output/tailwind.css">
@@ -12,7 +13,7 @@
     <script src="./assets/lib/slick/slick.js" defer></script>
     <script src="./src/main.js" defer></script>
 </head>
-<body class="font-lato">
+<body>
     <!--- header start--->
     <header class="md:shadow-8xl">
         <div class="container mx-auto">
@@ -32,7 +33,7 @@
                             <a href="index.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">home</a>
                         </li>
                         <li class="inline-block">
-                            <a href="service.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">sevice</a>
+                            <a href="service.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">service</a>
                         </li>
                         <li class="inline-block">
                             <a href="blog.html" class="text-sm  capitalize text-primary hover:text-blue transition ease-in duration-300 font-bold mr-[28px]">Blog</a>
@@ -42,283 +43,403 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex justify-center items-center">
-                    <div>
-                        <a href="#" class="justify-center items-center gap-x-1 bg-linear-primary hover:opacity-70 transition ease-in duration-300  px-6 py-2 shadow-4xl rounded-lg hidden md:flex  text-white">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.0003 1.66666C7.81699 1.66666 6.04199 3.44166 6.04199 5.62499C6.04199 7.76666 7.71699 9.49999 9.90033 9.57499C9.96699 9.56666 10.0337 9.56666 10.0837 9.57499C10.1003 9.57499 10.1087 9.57499 10.1253 9.57499C10.1337 9.57499 10.1337 9.57499 10.142 9.57499C12.2753 9.49999 13.9503 7.76666 13.9587 5.62499C13.9587 3.44166 12.1837 1.66666 10.0003 1.66666Z" fill="currentColor"/>
-                                <path d="M14.2338 11.7917C11.9088 10.2417 8.11712 10.2417 5.77546 11.7917C4.71712 12.5 4.13379 13.4583 4.13379 14.4833C4.13379 15.5083 4.71712 16.4583 5.76712 17.1583C6.93379 17.9417 8.46712 18.3333 10.0005 18.3333C11.5338 18.3333 13.0671 17.9417 14.2338 17.1583C15.2838 16.45 15.8671 15.5 15.8671 14.4667C15.8588 13.4417 15.2838 12.4917 14.2338 11.7917Z" fill="currentColor"/>
-                            </svg>
-                            <span class="text-  font-normal capitalize text-white">My Account</span>
-                        </a>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="hidden xl:block">
+                        <form action="#">
+                            <div class="flex justify-center items-center border-[1px] border-gray12/40 py-[6px] pl-3 ga rounded-lg">
+                                 <img width="24" height="24" loading="lazy" class="inline-block" src="./assets/images/webp/search.webp" alt="search.webp">
+                                <input class="text-sm font-normal text-gray12 outline-none" type="text" name="search" id="search" placeholder="Search Here">
+                            </div>
+                        </form>
                     </div>
-                    <div class="md:hidden mr-2">
-                        <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.3333 15V16.6667H4.16667V15H13.3333ZM17.5 9.16668V10.8333H2.5V9.16668H17.5ZM15.8333 3.33334V5.00001H6.66667V3.33334H15.8333Z" fill="black"/>
-                        </svg>
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <a href="#" class="justify-center items-center gap-x-1 bg-linear-primary hover:opacity-70 transition ease-in duration-300  px-6 py-2 shadow-4xl rounded-lg hidden md:flex  text-white">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0003 1.66666C7.81699 1.66666 6.04199 3.44166 6.04199 5.62499C6.04199 7.76666 7.71699 9.49999 9.90033 9.57499C9.96699 9.56666 10.0337 9.56666 10.0837 9.57499C10.1003 9.57499 10.1087 9.57499 10.1253 9.57499C10.1337 9.57499 10.1337 9.57499 10.142 9.57499C12.2753 9.49999 13.9503 7.76666 13.9587 5.62499C13.9587 3.44166 12.1837 1.66666 10.0003 1.66666Z" fill="currentColor"/>
+                                    <path d="M14.2338 11.7917C11.9088 10.2417 8.11712 10.2417 5.77546 11.7917C4.71712 12.5 4.13379 13.4583 4.13379 14.4833C4.13379 15.5083 4.71712 16.4583 5.76712 17.1583C6.93379 17.9417 8.46712 18.3333 10.0005 18.3333C11.5338 18.3333 13.0671 17.9417 14.2338 17.1583C15.2838 16.45 15.8671 15.5 15.8671 14.4667C15.8588 13.4417 15.2838 12.4917 14.2338 11.7917Z" fill="currentColor"/>
+                                </svg>
+                                <span class="text-  font-normal capitalize text-white">My Account</span>
+                            </a>
+                        </div>
+                        <div class="md:hidden mr-2">
+                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.3333 15V16.6667H4.16667V15H13.3333ZM17.5 9.16668V10.8333H2.5V9.16668H17.5ZM15.8333 3.33334V5.00001H6.66667V3.33334H15.8333Z" fill="black"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
    </header><!--- header end--->
-   <!---user section start--->
-   <section class="py-14 md:py-20">
-        <div class="text-center">
-            <p class="text-base font-black text-gray4 uppercase mb-2">Our Team</p>
-            <h1 class="text-[46px] leading-[60px] lg:text-[64px] lg:leading-[76px] font-black text-primary max-w-[361px] md:max-w-[969px] mx-auto mb-4">What Doatkolom is All About</h1>
-            <p class="text-base sm:text-lg font-normal leading-7 pl-6 text-gray max-w-[425px] md:max-w-[591px] mx-auto mb-6">
-                Achieve a reliable experience and take your website to a new heights by installing our fast and powerful
-                <span class="text-[15px] font-bold leading-[27px] text-gray md:text-black100">WordPress Plugins.</span>
-            </p>
-            <!---user card start--->
-            <div class="container mx-auto">
-                <div class="flex justify-center items-center">
-                    <div>
-                        <img width="277" height="309" class="bg-cover" loading="lazy" src="./assets/images/webp/Card.webp" alt="card.webp">
-                    </div>
-                    <div class="relative top-9">
-                        <img width="277" height="309" class="bg-cover" loading="lazy" src="./assets/images/webp/Card-1.webp" alt="card-1.webp">
-                    </div>
-                    <div>
-                        <img width="277" height="309" class="bg-cover" loading="lazy" src="./assets/images/webp/Card-2.webp" alt="card-2.webp">
-                    </div>
-                    <div class="relative top-9 hidden md:block">
-                        <img width="277" height="309" class="bg-cover" loading="lazy" src="./assets/images/webp/Card-3.webp" alt="card-3.webp">
-                    </div>
-                </div><!---user card end--->
+   <!----main section start---->
+   <section class="py-8 md:py-20">
+        <div class="mx-4 md:mx-10 xl:mx-[135px]">
+            <!---main header start--->
+            <div>
+                <p class="text-base font-black text-gray4 uppercase mb-2">Search Result For:</p>
+                <h1 class="text-[27px] sm:text-[32px] leading-[60px] md:text-[46px] lg:text-[64px] lg:leading-[76px] font-black text-primary max-w-[361px] md:max-w-[969px] mb-4">
+                    elementor
+                    <span class="text-gray13">(2 Results)</span>
+                </h1>
+            </div><!---main header start--->
+        </div>
+        <!-----main content start---->
+        <div class="tab mx-4 md:mx-10 xl:mx-[135px]">
+            <div class="doatkolom-btn">
+                <button class="button text-sm sm:text-base font-Bevietnum font-semibold pb-1 mr-2 sm:mr-4 active">All Post</button>
+                <button class="button text-sm sm:text-base font-Bevietnum font-semibold pb-1 mr-2 sm:mr-4">Latest Only</button>
             </div>
         </div>
-   </section><!---user section end--->
-   <!---about us section start---->
-   <section class="py-10">
-        <div class="mx-4 md:mx-10 xl:mx-[90px]">
-             <!----item 1 start-->
-            <div class="md:grid grid-cols-2 mb-32">
-                <div>
-                    <p class="text-xs md:text-base font-inter font-bold text-blue5 uppercase mb-3">About US</p>
-                    <h1 class="text-[32px] leading-9 md:text-4xl lg:text-5xl font-black text-black300 mb-5">Our Story</h1>
+        <div class="tab-content">
+            <div class="bg-gray9 pt-10 pb-28 md:[40px] lg:px-20 xl:px-[230px]">
+                <!----content 1 start-->
+                <div class="button-content active">
+                    <!---block item start--->
+                    <div class="hidden lg:block">
+                        <!---item 1 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-1.webp" alt="blog-1.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 1 end--->
+                        <!---item 2 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-2.webp" alt="blog-2.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 2 end--->
+                        <!---item 3 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-3.webp" alt="blog-3.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 3 end--->
+                        <!---item 4 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-4.webp" alt="blog-4.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 4 end--->
+                    </div><!---block item end--->
+                    <!---hidden item start--->
+                    <div class="lg:hidden">
+                    <!----item 1 start--->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 px-4">
+                        <!----item a start--->
+                        <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-7.webp" alt="blog-7.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item a end--->
+                         <!----item b start--->
+                         <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-7.webp" alt="blog-7.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item b end--->  
+                        <!----item c start--->
+                        <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-8.webp" alt="blog-8.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item c end---> 
+                        <!----item d start--->
+                        <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-9.webp" alt="blog-9.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item d end---> 
+                    </div><!----item 1 end--->
+                    </div><!---hidden item end--->
+                </div><!----content 1 end--->
+                <!----content 2 start-->
+                <div class="button-content">
+                    <!---block item start--->
+                    <div class="hidden lg:block">
+                        <!---item 1 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-5.webp" alt="blog-5.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 1 end--->
+                        <!---item 2 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-2.webp" alt="blog-2.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 2 end--->
+                        <!---item 3 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-6.webp" alt="blog-6.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 3 end--->
+                        <!---item 4 start--->
+                        <div class="grid grid-cols-2 mb-7">
+                            <img width="380" height="292" loading="lazy" src="./assets/images/webp/blog-4.webp" alt="blog-4.webp">
+                            <div>
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2 mt-8">CUSTOMER SERVICE</p>
+                                <h1 class="text-[13px] leading-5 font-black text-gray11 lg:mb-[130px] mb-[162px]">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-bold text-black600 mb-1">Ashraf Mollah</h6>
+                                        <p class="text-sm font-normal text-black600">Jan 10, 2022∙3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!---item 4 end--->
+                    </div><!---block item end--->
+                    <!---hidden item start--->
+                    <div class="lg:hidden">
+                    <!----item 1 start--->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 px-4">
+                        <!----item a start--->
+                        <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-7.webp" alt="blog-7.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item a end--->
+                         <!----item b start--->
+                         <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-7.webp" alt="blog-7.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item b end--->  
+                        <!----item c start--->
+                        <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-8.webp" alt="blog-8.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item c end---> 
+                        <!----item d start--->
+                        <div class="max-w-[380px]">
+                            <div>
+                                <img width="380" height="292" loading="lazy" class="rounded-t-2xl" src="./assets/images/webp/blog-9.webp" alt="blog-9.webp">
+                            </div>
+                            <div class="p-6">
+                                <p class="text-sm font-bold text-transparent bg-clip-text bg-linear-primary mb-2">CUSTOMER SERVICE</p>
+                                <h1 class="text-base sm:text-[17px] md:text-[15px] leading-7 font-black text-gray11 mb-10">5 PSYCHOLOGICAL TIPS FOR SELLING THAT EVERY MARKETER..</h1>
+                                <div class="flex items-center gap-2">
+                                    <div>
+                                        <img width="42" height="42" loading="lazy" src="./assets/images/webp/item-img.webp" alt="item-img.webp">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-base font-poppins font-normal text-gray11 mb-1">Gal Dubnisky</h6>
+                                        <p class="text-xs font-poppins font-normal text-gray10">Customer Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----item d end---> 
+                    </div><!----item 1 end--->
+                    </div><!---hidden item start--->
+                </div><!----content 2 end--->
+                <div class="xl:mx-[135px] text-center sm:text-start md:text-center lg:hidden mt-6">
+                    <ul>
+                        <li class="inline-block">
+                            <a href="#">
+                                <img width="24" height="24" loading="lazy" class="inline-block" src="./assets/images/webp/Icon Base.webp" alt="icon base.webp">
+                            </a>
+                        </li>
+                        <li class="inline-block">
+                           <a href="#" class="list active text-base font-publicSans font-semibold text-black400 transition ease-in duration-300">1</a>
+                        </li>
+                        <li class="inline-block">
+                            <a href="#" class="list text-base font-publicSans font-semibold text-black400 hover:bg-gray12/20 transition ease-in duration-300">2</a>
+                        </li>
+                        <li class="inline-block">
+                            <a href="#" class="list text-base font-publicSans font-semibold text-black400 hover:bg-gray12/20 transition ease-in duration-300">3</a>
+                        </li>
+                        <li class="inline-block">
+                            <a href="#" class="list text-base font-publicSans font-semibold text-black400 hover:bg-gray12/20 transition ease-in duration-300">4</a>
+                        </li>
+                        <li class="inline-block">
+                            <a href="#" class="list text-base font-publicSans font-semibold text-black400 hover:bg-gray12/20 transition ease-in duration-300">5</a>
+                        </li>
+                        <li class="inline-block">
+                            <a href="#" class="list text-base font-publicSans font-semibold text-black400 hover:bg-gray12/20 transition ease-in duration-300">...</a>
+                        </li>
+                        <li class="inline-block">
+                            <img width="24" height="24" loading="lazy" class="inline-block" src="./assets/images/webp/icon-base1.webp" alt="icon-base1.webp">
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <p class="text-base md:text-lg font-normal max-w-[361px] md:max-w-[591px] text-gray mb-6">
-                        The following are terms of accessing and/or using Doatkolom website and service (hereinafter “the Service”). By accepting the terms below (hereinafter “the Agreement”) and/or using the Service, you are stating that you agree to be bound by all terms without modification, conditions or notices.
-                    </p>
-                    <p class="text-base md:text-lg font-normal text-gray max-w-[361px] md:max-w-[591px]">Doatkolom was created by, and is a service of Doatkolom ApS (hereinafter “Doatkolom”)</p>
-                </div>
-            </div> <!----item 1 end-->
-             <!----item 2 start-->
-             <div class="md:grid grid-cols-2">
-                <div>
-                    <h1 class="text-[32px] leading-9 md:text-4xl lg:text-5xl font-black text-black300 mb-5">Keeping it simple</h1>
-                </div>
-                <div>
-                    <p class="text-base md:text-lg font-normal max-w-[361px] md:max-w-[591px] text-gray mb-6">
-                        The following are terms of accessing and/or using Doatkolom website and service (hereinafter “the Service”). By accepting the terms below (hereinafter “the Agreement”) and/or using the Service, you are stating that you agree to be bound by all terms without modification, conditions or notices.
-                    </p>
-                    <p class="text-base md:text-lg font-normal text-gray max-w-[361px] md:max-w-[591px]">Doatkolom was created by, and is a service of Doatkolom ApS (hereinafter “Doatkolom”)</p>
-                </div>
-            </div> <!----item 2 end-->
-        </div>
-   </section><!---about us section end---->
-   <!---values section start-->
-   <section class="py-14">
-     <div class="bg-sky8 py-14">
-            <div class="mx-4 md:mx-10 xl:mx-[90px] bg-sky8">
-                <!---headding start---->
-                <div class="text-center mb-14">
-                    <p class="text-xs md:text-base font-inter font-bold text-blue5 uppercase mb-1">CORE VALUES</p>
-                    <h1 class="text-[32px] leading-9 md:text-4xl lg:text-5xl font-black text-black300 max-w-[330px] md:max-w-[580px] mx-auto mb-4">The Standard by Which We Run Our Company</h1>
-                    <p class="hidden md:block text-lg font-normal text-gray max-w-[591px] mx-auto">The following are terms of accessing and/or using Doatkolom website and service (hereinafter “the Service”). By accepting the terms below (hereinafter “the Agreement”) and/</p>
-                    <p class="md:hidden text-base font-normal text-gray max-w-[361px] mx-auto">The following are terms of accessing and/or using Doatkolom website and service (hereinafter “the Service”). By accepting the term</p>
-                </div> <!---headding end---->
-                <!---content start--->
-                <div class="grid md:grid-cols-2 lg:grid-cols-4">
-                    <!---item 1 start--->
-                    <div class="text-center mb-14">
-                        <div class="w-12 h-12 bg-green1 flex justify-center items-center  rounded-lg shadow-9xl mb-4 mx-auto">
-                            <img width="24" height="24" loading="lazy" src="./assets/images/webp/values-1.webp" alt="values-1.webp">
-                        </div>
-                        <h1 class="text-2xl font-black text-black300 mb-2">We Iterate to Success</h1>
-                        <p class="text-base font-inter text-black500 max-w-[361px] md:max-w-[255px] mx-auto">Lorem ipsum dolor sit amet consectetur. Tortor felis commodo tincidunt purus gravida pellentesque. </p>
-                    </div><!---item 1 end--->
-                    <!---item 2 start--->
-                    <div class="text-center mb-14">
-                        <div class="w-12 h-12 bg-blue6 flex justify-center items-center  rounded-lg shadow-9xl mb-4 mx-auto">
-                            <img width="24" height="24" loading="lazy" src="./assets/images/webp/values-2.webp" alt="values-2.webp">
-                        </div>
-                        <h1 class="text-2xl font-black text-black300 mb-2">Personal Growth</h1>
-                        <p class="text-base font-inter text-black500 max-w-[361px] md:max-w-[255px] mx-auto">Lorem ipsum dolor sit amet consectetur. Tortor felis commodo tincidunt purus gravida pellentesque. </p>
-                    </div><!---item 2 end--->
-                    <!---item 3 start--->
-                    <div class="text-center mb-14">
-                        <div class="w-12 h-12 bg-sky9 flex justify-center items-center  rounded-lg shadow-9xl mb-4 mx-auto">
-                            <img width="24" height="24" loading="lazy" src="./assets/images/webp/values-3.webp" alt="values-3.webp">
-                        </div>
-                        <h1 class="text-2xl font-black text-black300 mb-2">We Go The Extra Mile</h1>
-                        <p class="text-base font-inter text-black500 max-w-[361px] md:max-w-[255px] mx-auto">Lorem ipsum dolor sit amet consectetur. Tortor felis commodo tincidunt purus gravida pellentesque. </p>
-                    </div><!---item 3 end--->
-                    <!---item 4 start--->
-                    <div class="text-center mb-14">
-                        <div class="w-12 h-12 bg-brown flex justify-center items-center  rounded-lg shadow-9xl mb-4 mx-auto">
-                            <img width="24" height="24" loading="lazy" src="./assets/images/webp/values-4.webp" alt="values-4.webp">
-                        </div>
-                        <h1 class="text-2xl font-black text-black300 mb-2">All While Having Fun</h1>
-                        <p class="text-base font-inter text-black500 max-w-[361px] md:max-w-[255px] mx-auto">Lorem ipsum dolor sit amet consectetur. Tortor felis commodo tincidunt purus gravida pellentesque. </p>
-                    </div><!---item 4 end--->
-                </div><!---content end--->
             </div>
         </div>
-    </section><!---values section end-->
-    <!---team section start-->
-    <section class="py-15">
-        <div class="mx-4 md:mx-10 xl:mx-[90px]">
-            <!---headding start---->
-            <div class="text-center mb-14">
-                <p class="text-xs md:text-base font-inter font-bold text-blue5 uppercase mb-1">Our Team</p>
-                <h1 class="text-[32px] leading-9 md:text-4xl lg:text-5xl font-black text-black300 max-w-[330px] md:max-w-[580px] mx-auto mb-4">Meet the awesome people behind Doatkolom</h1>
-                <p class="text-base md:text-lg font-normal text-gray max-w-[361px] md:max-w-[591px] mx-auto mb-14">Meet the talented team of designers, marketers, developers, and customer service reps that make Doatkolom possible</p>
-            </div> <!---headding end---->
-            <div class="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-                <!---item 1 start---->
-                <div class="bg-white rounded-2xl shadow-3xl mb-6">
-                    <div class="text-center pt-6 pb-4">
-                        <h2 class="text-base font-publicSans font-semibold text-black400">MD Al Amin</h2>
-                        <p class="text-sm font-publicSans font-normal text-gray4 mb-4">Founder & CEO</p>
-                        <div class="flex justify-center items-center mb-4">
-                            <img width="261" height="254" src="./assets/images/webp/team.webp" alt="team.webp">
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.6667 2.91655C14.6667 2.68643 14.4801 2.49988 14.25 2.49988H12.1667C9.98276 2.3911 8.12106 4.06663 8 6.24988V8.49988H5.91667C5.68655 8.49988 5.5 8.68643 5.5 8.91655V11.0832C5.5 11.3133 5.68655 11.4999 5.91667 11.4999H8V17.0832C8 17.3133 8.18655 17.4999 8.41667 17.4999H10.9167C11.1468 17.4999 11.3333 17.3133 11.3333 17.0832V11.4999H13.5167C13.7073 11.5026 13.8755 11.3756 13.925 11.1916L14.525 9.02488C14.5586 8.90011 14.5324 8.76681 14.4541 8.66403C14.3758 8.56124 14.2542 8.50061 14.125 8.49988H11.3333V6.24988C11.3763 5.82247 11.7371 5.49773 12.1667 5.49988H14.25C14.4801 5.49988 14.6667 5.31334 14.6667 5.08322V2.91655Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.06456 0.716748C5.95345 0.67647 6.23713 0.666748 8.50033 0.666748C10.7635 0.666748 11.0472 0.67647 11.9361 0.716748C13.291 0.778554 14.4802 1.1105 15.435 2.06536C16.3903 3.02057 16.7219 4.21015 16.7837 5.56432C16.8239 6.45321 16.8337 6.73689 16.8337 9.00008C16.8337 11.2633 16.8239 11.547 16.7837 12.4358C16.7219 13.7907 16.3899 14.9799 15.435 15.9348C14.4798 16.89 13.2899 17.2216 11.9361 17.2834C11.0472 17.3237 10.7635 17.3334 8.50033 17.3334C6.23713 17.3334 5.95345 17.3237 5.06456 17.2834C3.7097 17.2216 2.52046 16.8897 1.5656 15.9348C0.610395 14.9796 0.278798 13.79 0.216992 12.4358C0.176714 11.547 0.166992 11.2633 0.166992 9.00008C0.166992 6.73689 0.176714 6.45321 0.216992 5.56432C0.278798 4.20946 0.610742 3.02022 1.5656 2.06536C2.52081 1.11015 3.7104 0.778554 5.06456 0.716748ZM8.50033 3.44453C6.99164 3.44453 6.80241 3.45078 6.2097 3.47786C5.30692 3.51918 4.51387 3.74036 3.87706 4.37682C3.2406 5.01328 3.01942 5.80633 2.9781 6.70946C2.95102 7.30217 2.94477 7.4914 2.94477 9.00008C2.94477 10.5088 2.95102 10.698 2.9781 11.2907C3.01942 12.1935 3.2406 12.9865 3.87706 13.6233C4.51352 14.2598 5.30658 14.481 6.2097 14.5223C6.80241 14.5494 6.99164 14.5556 8.50033 14.5556C10.009 14.5556 10.1982 14.5494 10.791 14.5223C11.6937 14.481 12.4868 14.2598 13.1236 13.6233C13.76 12.9869 13.9812 12.1938 14.0225 11.2907C14.0496 10.698 14.0559 10.5088 14.0559 9.00008C14.0559 7.4914 14.0496 7.30217 14.0225 6.70946C13.9812 5.80668 13.76 5.01362 13.1236 4.37682C12.4871 3.74036 11.6941 3.51918 10.791 3.47786C10.1982 3.45078 10.009 3.44453 8.50033 3.44453ZM8.50033 4.44557C9.98366 4.44557 10.1594 4.45112 10.7451 4.47786C11.3774 4.50668 11.9642 4.63341 12.4156 5.0848C12.867 5.53619 12.9937 6.123 13.0225 6.75529C13.0493 7.34105 13.0548 7.51675 13.0548 9.00008C13.0548 10.4834 13.0493 10.6591 13.0225 11.2449C12.9937 11.8772 12.867 12.464 12.4156 12.9154C11.9642 13.3667 11.3774 13.4935 10.7451 13.5223C10.1594 13.549 9.98366 13.5546 8.50033 13.5546C7.01699 13.5546 6.8413 13.549 6.25553 13.5223C5.62324 13.4935 5.03644 13.3667 4.58505 12.9154C4.13366 12.464 4.00692 11.8772 3.9781 11.2449C3.95137 10.6591 3.94581 10.4834 3.94581 9.00008C3.94581 7.51675 3.95137 7.34105 3.9781 6.75529C4.00692 6.123 4.13366 5.53619 4.58505 5.0848C5.03644 4.63341 5.62324 4.50668 6.25553 4.47786C6.8413 4.45112 7.01699 4.44557 8.50033 4.44557ZM5.64755 9.00008C5.64755 7.42474 6.92463 6.1473 8.50033 6.1473C10.076 6.1473 11.3531 7.42474 11.3531 9.00008C11.3531 10.5754 10.0757 11.8529 8.50033 11.8529C6.92498 11.8529 5.64755 10.5754 5.64755 9.00008ZM6.64859 9.00008C6.64859 10.0227 7.47741 10.8518 8.50033 10.8518C9.52324 10.8518 10.3521 10.023 10.3521 9.00008C10.3521 7.97751 9.52324 7.14835 8.50033 7.14835C7.47776 7.14835 6.64859 7.97716 6.64859 9.00008ZM11.466 6.70112C11.8341 6.70112 12.1326 6.40265 12.1326 6.03446C12.1326 5.66627 11.8341 5.36779 11.466 5.36779C11.0978 5.36779 10.7993 5.66627 10.7993 6.03446C10.7993 6.40265 11.0978 6.70112 11.466 6.70112Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.125 7.00003C11.835 6.9956 10.5963 7.50436 9.68181 8.41415C8.76733 9.32394 8.25221 10.5601 8.25 11.85V16.75C8.25 16.9489 8.32902 17.1397 8.46967 17.2804C8.61032 17.421 8.80109 17.5 9 17.5H10.75C11.1642 17.5 11.5 17.1642 11.5 16.75V11.85C11.4997 11.3906 11.6948 10.9527 12.0367 10.6458C12.3786 10.3389 12.8349 10.192 13.2917 10.2417C14.13 10.3473 14.7566 11.0635 14.75 11.9084V16.75C14.75 17.1642 15.0858 17.5 15.5 17.5H17.25C17.6642 17.5 18 17.1642 18 16.75V11.85C17.9978 10.5601 17.4827 9.32394 16.5682 8.41415C15.6537 7.50436 14.415 6.9956 13.125 7.00003Z" stroke="currentColor" fill="#637381"/>
-                                    <rect x="3" y="7.75" width="3.75" height="9.75" rx="0.9"  fill="#637381"/>
-                                    <circle cx="4.875" cy="4.375" r="1.875" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.23326 16.6667C9.72277 16.75 12.1402 15.823 13.9357 14.0965C15.7312 12.37 16.7522 9.99085 16.7666 7.5C17.3313 6.80117 17.7506 5.99652 17.9999 5.13333C18.0379 4.99402 17.9907 4.84537 17.8791 4.75364C17.7676 4.6619 17.6126 4.64416 17.4833 4.70833C16.8775 4.99994 16.1532 4.87251 15.6833 4.39166C15.0922 3.74444 14.2643 3.36413 13.3882 3.33744C12.5121 3.31075 11.6626 3.63995 11.0333 4.25C10.1657 5.09016 9.80204 6.32356 10.0749 7.5C7.28326 7.66666 5.3666 6.34166 3.83326 4.525C3.73914 4.4184 3.59089 4.37756 3.45545 4.4209C3.32001 4.46424 3.22302 4.58356 3.20826 4.725C2.61003 8.04347 4.13899 11.3839 7.0416 13.1C6.0913 14.1899 4.75677 14.8705 3.3166 15C3.15841 15.0262 3.03441 15.1501 3.00805 15.3083C2.98169 15.4665 3.05881 15.6239 3.19993 15.7C4.45286 16.3261 5.83262 16.6568 7.23326 16.6667Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div><!---item 1 end---->
-                <!---item 2 start---->
-                <div class="bg-white rounded-2xl shadow-3xl mb-6">
-                    <div class="text-center pt-6 pb-4">
-                        <h2 class="text-base font-publicSans font-semibold text-black400">Ashraf Mollah</h2>
-                        <p class="text-sm font-publicSans font-normal text-gray4 mb-4">Co-Founder Lead Frontend</p>
-                        <div class="flex justify-center items-center mb-4">
-                            <img width="261" height="254" src="./assets/images/webp/team.webp" alt="team.webp">
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.6667 2.91655C14.6667 2.68643 14.4801 2.49988 14.25 2.49988H12.1667C9.98276 2.3911 8.12106 4.06663 8 6.24988V8.49988H5.91667C5.68655 8.49988 5.5 8.68643 5.5 8.91655V11.0832C5.5 11.3133 5.68655 11.4999 5.91667 11.4999H8V17.0832C8 17.3133 8.18655 17.4999 8.41667 17.4999H10.9167C11.1468 17.4999 11.3333 17.3133 11.3333 17.0832V11.4999H13.5167C13.7073 11.5026 13.8755 11.3756 13.925 11.1916L14.525 9.02488C14.5586 8.90011 14.5324 8.76681 14.4541 8.66403C14.3758 8.56124 14.2542 8.50061 14.125 8.49988H11.3333V6.24988C11.3763 5.82247 11.7371 5.49773 12.1667 5.49988H14.25C14.4801 5.49988 14.6667 5.31334 14.6667 5.08322V2.91655Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.06456 0.716748C5.95345 0.67647 6.23713 0.666748 8.50033 0.666748C10.7635 0.666748 11.0472 0.67647 11.9361 0.716748C13.291 0.778554 14.4802 1.1105 15.435 2.06536C16.3903 3.02057 16.7219 4.21015 16.7837 5.56432C16.8239 6.45321 16.8337 6.73689 16.8337 9.00008C16.8337 11.2633 16.8239 11.547 16.7837 12.4358C16.7219 13.7907 16.3899 14.9799 15.435 15.9348C14.4798 16.89 13.2899 17.2216 11.9361 17.2834C11.0472 17.3237 10.7635 17.3334 8.50033 17.3334C6.23713 17.3334 5.95345 17.3237 5.06456 17.2834C3.7097 17.2216 2.52046 16.8897 1.5656 15.9348C0.610395 14.9796 0.278798 13.79 0.216992 12.4358C0.176714 11.547 0.166992 11.2633 0.166992 9.00008C0.166992 6.73689 0.176714 6.45321 0.216992 5.56432C0.278798 4.20946 0.610742 3.02022 1.5656 2.06536C2.52081 1.11015 3.7104 0.778554 5.06456 0.716748ZM8.50033 3.44453C6.99164 3.44453 6.80241 3.45078 6.2097 3.47786C5.30692 3.51918 4.51387 3.74036 3.87706 4.37682C3.2406 5.01328 3.01942 5.80633 2.9781 6.70946C2.95102 7.30217 2.94477 7.4914 2.94477 9.00008C2.94477 10.5088 2.95102 10.698 2.9781 11.2907C3.01942 12.1935 3.2406 12.9865 3.87706 13.6233C4.51352 14.2598 5.30658 14.481 6.2097 14.5223C6.80241 14.5494 6.99164 14.5556 8.50033 14.5556C10.009 14.5556 10.1982 14.5494 10.791 14.5223C11.6937 14.481 12.4868 14.2598 13.1236 13.6233C13.76 12.9869 13.9812 12.1938 14.0225 11.2907C14.0496 10.698 14.0559 10.5088 14.0559 9.00008C14.0559 7.4914 14.0496 7.30217 14.0225 6.70946C13.9812 5.80668 13.76 5.01362 13.1236 4.37682C12.4871 3.74036 11.6941 3.51918 10.791 3.47786C10.1982 3.45078 10.009 3.44453 8.50033 3.44453ZM8.50033 4.44557C9.98366 4.44557 10.1594 4.45112 10.7451 4.47786C11.3774 4.50668 11.9642 4.63341 12.4156 5.0848C12.867 5.53619 12.9937 6.123 13.0225 6.75529C13.0493 7.34105 13.0548 7.51675 13.0548 9.00008C13.0548 10.4834 13.0493 10.6591 13.0225 11.2449C12.9937 11.8772 12.867 12.464 12.4156 12.9154C11.9642 13.3667 11.3774 13.4935 10.7451 13.5223C10.1594 13.549 9.98366 13.5546 8.50033 13.5546C7.01699 13.5546 6.8413 13.549 6.25553 13.5223C5.62324 13.4935 5.03644 13.3667 4.58505 12.9154C4.13366 12.464 4.00692 11.8772 3.9781 11.2449C3.95137 10.6591 3.94581 10.4834 3.94581 9.00008C3.94581 7.51675 3.95137 7.34105 3.9781 6.75529C4.00692 6.123 4.13366 5.53619 4.58505 5.0848C5.03644 4.63341 5.62324 4.50668 6.25553 4.47786C6.8413 4.45112 7.01699 4.44557 8.50033 4.44557ZM5.64755 9.00008C5.64755 7.42474 6.92463 6.1473 8.50033 6.1473C10.076 6.1473 11.3531 7.42474 11.3531 9.00008C11.3531 10.5754 10.0757 11.8529 8.50033 11.8529C6.92498 11.8529 5.64755 10.5754 5.64755 9.00008ZM6.64859 9.00008C6.64859 10.0227 7.47741 10.8518 8.50033 10.8518C9.52324 10.8518 10.3521 10.023 10.3521 9.00008C10.3521 7.97751 9.52324 7.14835 8.50033 7.14835C7.47776 7.14835 6.64859 7.97716 6.64859 9.00008ZM11.466 6.70112C11.8341 6.70112 12.1326 6.40265 12.1326 6.03446C12.1326 5.66627 11.8341 5.36779 11.466 5.36779C11.0978 5.36779 10.7993 5.66627 10.7993 6.03446C10.7993 6.40265 11.0978 6.70112 11.466 6.70112Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.125 7.00003C11.835 6.9956 10.5963 7.50436 9.68181 8.41415C8.76733 9.32394 8.25221 10.5601 8.25 11.85V16.75C8.25 16.9489 8.32902 17.1397 8.46967 17.2804C8.61032 17.421 8.80109 17.5 9 17.5H10.75C11.1642 17.5 11.5 17.1642 11.5 16.75V11.85C11.4997 11.3906 11.6948 10.9527 12.0367 10.6458C12.3786 10.3389 12.8349 10.192 13.2917 10.2417C14.13 10.3473 14.7566 11.0635 14.75 11.9084V16.75C14.75 17.1642 15.0858 17.5 15.5 17.5H17.25C17.6642 17.5 18 17.1642 18 16.75V11.85C17.9978 10.5601 17.4827 9.32394 16.5682 8.41415C15.6537 7.50436 14.415 6.9956 13.125 7.00003Z" stroke="currentColor" fill="#637381"/>
-                                    <rect x="3" y="7.75" width="3.75" height="9.75" rx="0.9"  fill="#637381"/>
-                                    <circle cx="4.875" cy="4.375" r="1.875" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.23326 16.6667C9.72277 16.75 12.1402 15.823 13.9357 14.0965C15.7312 12.37 16.7522 9.99085 16.7666 7.5C17.3313 6.80117 17.7506 5.99652 17.9999 5.13333C18.0379 4.99402 17.9907 4.84537 17.8791 4.75364C17.7676 4.6619 17.6126 4.64416 17.4833 4.70833C16.8775 4.99994 16.1532 4.87251 15.6833 4.39166C15.0922 3.74444 14.2643 3.36413 13.3882 3.33744C12.5121 3.31075 11.6626 3.63995 11.0333 4.25C10.1657 5.09016 9.80204 6.32356 10.0749 7.5C7.28326 7.66666 5.3666 6.34166 3.83326 4.525C3.73914 4.4184 3.59089 4.37756 3.45545 4.4209C3.32001 4.46424 3.22302 4.58356 3.20826 4.725C2.61003 8.04347 4.13899 11.3839 7.0416 13.1C6.0913 14.1899 4.75677 14.8705 3.3166 15C3.15841 15.0262 3.03441 15.1501 3.00805 15.3083C2.98169 15.4665 3.05881 15.6239 3.19993 15.7C4.45286 16.3261 5.83262 16.6568 7.23326 16.6667Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div><!---item 2 end---->
-                <!---item 3 start---->
-                <div class="bg-white rounded-2xl shadow-3xl mb-6">
-                    <div class="text-center pt-6 pb-4">
-                        <h2 class="text-base font-publicSans font-semibold text-black400">Ashik Prottoy</h2>
-                        <p class="text-sm font-publicSans font-normal text-gray4 mb-4">Designer</p>
-                        <div class="flex justify-center items-center mb-4">
-                            <img width="261" height="254" src="./assets/images/webp/team.webp" alt="team.webp">
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.6667 2.91655C14.6667 2.68643 14.4801 2.49988 14.25 2.49988H12.1667C9.98276 2.3911 8.12106 4.06663 8 6.24988V8.49988H5.91667C5.68655 8.49988 5.5 8.68643 5.5 8.91655V11.0832C5.5 11.3133 5.68655 11.4999 5.91667 11.4999H8V17.0832C8 17.3133 8.18655 17.4999 8.41667 17.4999H10.9167C11.1468 17.4999 11.3333 17.3133 11.3333 17.0832V11.4999H13.5167C13.7073 11.5026 13.8755 11.3756 13.925 11.1916L14.525 9.02488C14.5586 8.90011 14.5324 8.76681 14.4541 8.66403C14.3758 8.56124 14.2542 8.50061 14.125 8.49988H11.3333V6.24988C11.3763 5.82247 11.7371 5.49773 12.1667 5.49988H14.25C14.4801 5.49988 14.6667 5.31334 14.6667 5.08322V2.91655Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.06456 0.716748C5.95345 0.67647 6.23713 0.666748 8.50033 0.666748C10.7635 0.666748 11.0472 0.67647 11.9361 0.716748C13.291 0.778554 14.4802 1.1105 15.435 2.06536C16.3903 3.02057 16.7219 4.21015 16.7837 5.56432C16.8239 6.45321 16.8337 6.73689 16.8337 9.00008C16.8337 11.2633 16.8239 11.547 16.7837 12.4358C16.7219 13.7907 16.3899 14.9799 15.435 15.9348C14.4798 16.89 13.2899 17.2216 11.9361 17.2834C11.0472 17.3237 10.7635 17.3334 8.50033 17.3334C6.23713 17.3334 5.95345 17.3237 5.06456 17.2834C3.7097 17.2216 2.52046 16.8897 1.5656 15.9348C0.610395 14.9796 0.278798 13.79 0.216992 12.4358C0.176714 11.547 0.166992 11.2633 0.166992 9.00008C0.166992 6.73689 0.176714 6.45321 0.216992 5.56432C0.278798 4.20946 0.610742 3.02022 1.5656 2.06536C2.52081 1.11015 3.7104 0.778554 5.06456 0.716748ZM8.50033 3.44453C6.99164 3.44453 6.80241 3.45078 6.2097 3.47786C5.30692 3.51918 4.51387 3.74036 3.87706 4.37682C3.2406 5.01328 3.01942 5.80633 2.9781 6.70946C2.95102 7.30217 2.94477 7.4914 2.94477 9.00008C2.94477 10.5088 2.95102 10.698 2.9781 11.2907C3.01942 12.1935 3.2406 12.9865 3.87706 13.6233C4.51352 14.2598 5.30658 14.481 6.2097 14.5223C6.80241 14.5494 6.99164 14.5556 8.50033 14.5556C10.009 14.5556 10.1982 14.5494 10.791 14.5223C11.6937 14.481 12.4868 14.2598 13.1236 13.6233C13.76 12.9869 13.9812 12.1938 14.0225 11.2907C14.0496 10.698 14.0559 10.5088 14.0559 9.00008C14.0559 7.4914 14.0496 7.30217 14.0225 6.70946C13.9812 5.80668 13.76 5.01362 13.1236 4.37682C12.4871 3.74036 11.6941 3.51918 10.791 3.47786C10.1982 3.45078 10.009 3.44453 8.50033 3.44453ZM8.50033 4.44557C9.98366 4.44557 10.1594 4.45112 10.7451 4.47786C11.3774 4.50668 11.9642 4.63341 12.4156 5.0848C12.867 5.53619 12.9937 6.123 13.0225 6.75529C13.0493 7.34105 13.0548 7.51675 13.0548 9.00008C13.0548 10.4834 13.0493 10.6591 13.0225 11.2449C12.9937 11.8772 12.867 12.464 12.4156 12.9154C11.9642 13.3667 11.3774 13.4935 10.7451 13.5223C10.1594 13.549 9.98366 13.5546 8.50033 13.5546C7.01699 13.5546 6.8413 13.549 6.25553 13.5223C5.62324 13.4935 5.03644 13.3667 4.58505 12.9154C4.13366 12.464 4.00692 11.8772 3.9781 11.2449C3.95137 10.6591 3.94581 10.4834 3.94581 9.00008C3.94581 7.51675 3.95137 7.34105 3.9781 6.75529C4.00692 6.123 4.13366 5.53619 4.58505 5.0848C5.03644 4.63341 5.62324 4.50668 6.25553 4.47786C6.8413 4.45112 7.01699 4.44557 8.50033 4.44557ZM5.64755 9.00008C5.64755 7.42474 6.92463 6.1473 8.50033 6.1473C10.076 6.1473 11.3531 7.42474 11.3531 9.00008C11.3531 10.5754 10.0757 11.8529 8.50033 11.8529C6.92498 11.8529 5.64755 10.5754 5.64755 9.00008ZM6.64859 9.00008C6.64859 10.0227 7.47741 10.8518 8.50033 10.8518C9.52324 10.8518 10.3521 10.023 10.3521 9.00008C10.3521 7.97751 9.52324 7.14835 8.50033 7.14835C7.47776 7.14835 6.64859 7.97716 6.64859 9.00008ZM11.466 6.70112C11.8341 6.70112 12.1326 6.40265 12.1326 6.03446C12.1326 5.66627 11.8341 5.36779 11.466 5.36779C11.0978 5.36779 10.7993 5.66627 10.7993 6.03446C10.7993 6.40265 11.0978 6.70112 11.466 6.70112Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.125 7.00003C11.835 6.9956 10.5963 7.50436 9.68181 8.41415C8.76733 9.32394 8.25221 10.5601 8.25 11.85V16.75C8.25 16.9489 8.32902 17.1397 8.46967 17.2804C8.61032 17.421 8.80109 17.5 9 17.5H10.75C11.1642 17.5 11.5 17.1642 11.5 16.75V11.85C11.4997 11.3906 11.6948 10.9527 12.0367 10.6458C12.3786 10.3389 12.8349 10.192 13.2917 10.2417C14.13 10.3473 14.7566 11.0635 14.75 11.9084V16.75C14.75 17.1642 15.0858 17.5 15.5 17.5H17.25C17.6642 17.5 18 17.1642 18 16.75V11.85C17.9978 10.5601 17.4827 9.32394 16.5682 8.41415C15.6537 7.50436 14.415 6.9956 13.125 7.00003Z" stroke="currentColor" fill="#637381"/>
-                                    <rect x="3" y="7.75" width="3.75" height="9.75" rx="0.9"  fill="#637381"/>
-                                    <circle cx="4.875" cy="4.375" r="1.875" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.23326 16.6667C9.72277 16.75 12.1402 15.823 13.9357 14.0965C15.7312 12.37 16.7522 9.99085 16.7666 7.5C17.3313 6.80117 17.7506 5.99652 17.9999 5.13333C18.0379 4.99402 17.9907 4.84537 17.8791 4.75364C17.7676 4.6619 17.6126 4.64416 17.4833 4.70833C16.8775 4.99994 16.1532 4.87251 15.6833 4.39166C15.0922 3.74444 14.2643 3.36413 13.3882 3.33744C12.5121 3.31075 11.6626 3.63995 11.0333 4.25C10.1657 5.09016 9.80204 6.32356 10.0749 7.5C7.28326 7.66666 5.3666 6.34166 3.83326 4.525C3.73914 4.4184 3.59089 4.37756 3.45545 4.4209C3.32001 4.46424 3.22302 4.58356 3.20826 4.725C2.61003 8.04347 4.13899 11.3839 7.0416 13.1C6.0913 14.1899 4.75677 14.8705 3.3166 15C3.15841 15.0262 3.03441 15.1501 3.00805 15.3083C2.98169 15.4665 3.05881 15.6239 3.19993 15.7C4.45286 16.3261 5.83262 16.6568 7.23326 16.6667Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div><!---item 3 end---->
-                <!---item 4 start---->
-                <div class="bg-white rounded-2xl shadow-3xl mb-6">
-                    <div class="text-center pt-6 pb-4">
-                        <h2 class="text-base font-publicSans font-semibold text-black400">Hasibur Rahman</h2>
-                        <p class="text-sm font-publicSans font-normal text-gray4 mb-4">Intern Frontend Developer</p>
-                        <div class="flex justify-center items-center mb-4">
-                            <img width="261" height="254" src="./assets/images/webp/team.webp" alt="team.webp">
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.6667 2.91655C14.6667 2.68643 14.4801 2.49988 14.25 2.49988H12.1667C9.98276 2.3911 8.12106 4.06663 8 6.24988V8.49988H5.91667C5.68655 8.49988 5.5 8.68643 5.5 8.91655V11.0832C5.5 11.3133 5.68655 11.4999 5.91667 11.4999H8V17.0832C8 17.3133 8.18655 17.4999 8.41667 17.4999H10.9167C11.1468 17.4999 11.3333 17.3133 11.3333 17.0832V11.4999H13.5167C13.7073 11.5026 13.8755 11.3756 13.925 11.1916L14.525 9.02488C14.5586 8.90011 14.5324 8.76681 14.4541 8.66403C14.3758 8.56124 14.2542 8.50061 14.125 8.49988H11.3333V6.24988C11.3763 5.82247 11.7371 5.49773 12.1667 5.49988H14.25C14.4801 5.49988 14.6667 5.31334 14.6667 5.08322V2.91655Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.06456 0.716748C5.95345 0.67647 6.23713 0.666748 8.50033 0.666748C10.7635 0.666748 11.0472 0.67647 11.9361 0.716748C13.291 0.778554 14.4802 1.1105 15.435 2.06536C16.3903 3.02057 16.7219 4.21015 16.7837 5.56432C16.8239 6.45321 16.8337 6.73689 16.8337 9.00008C16.8337 11.2633 16.8239 11.547 16.7837 12.4358C16.7219 13.7907 16.3899 14.9799 15.435 15.9348C14.4798 16.89 13.2899 17.2216 11.9361 17.2834C11.0472 17.3237 10.7635 17.3334 8.50033 17.3334C6.23713 17.3334 5.95345 17.3237 5.06456 17.2834C3.7097 17.2216 2.52046 16.8897 1.5656 15.9348C0.610395 14.9796 0.278798 13.79 0.216992 12.4358C0.176714 11.547 0.166992 11.2633 0.166992 9.00008C0.166992 6.73689 0.176714 6.45321 0.216992 5.56432C0.278798 4.20946 0.610742 3.02022 1.5656 2.06536C2.52081 1.11015 3.7104 0.778554 5.06456 0.716748ZM8.50033 3.44453C6.99164 3.44453 6.80241 3.45078 6.2097 3.47786C5.30692 3.51918 4.51387 3.74036 3.87706 4.37682C3.2406 5.01328 3.01942 5.80633 2.9781 6.70946C2.95102 7.30217 2.94477 7.4914 2.94477 9.00008C2.94477 10.5088 2.95102 10.698 2.9781 11.2907C3.01942 12.1935 3.2406 12.9865 3.87706 13.6233C4.51352 14.2598 5.30658 14.481 6.2097 14.5223C6.80241 14.5494 6.99164 14.5556 8.50033 14.5556C10.009 14.5556 10.1982 14.5494 10.791 14.5223C11.6937 14.481 12.4868 14.2598 13.1236 13.6233C13.76 12.9869 13.9812 12.1938 14.0225 11.2907C14.0496 10.698 14.0559 10.5088 14.0559 9.00008C14.0559 7.4914 14.0496 7.30217 14.0225 6.70946C13.9812 5.80668 13.76 5.01362 13.1236 4.37682C12.4871 3.74036 11.6941 3.51918 10.791 3.47786C10.1982 3.45078 10.009 3.44453 8.50033 3.44453ZM8.50033 4.44557C9.98366 4.44557 10.1594 4.45112 10.7451 4.47786C11.3774 4.50668 11.9642 4.63341 12.4156 5.0848C12.867 5.53619 12.9937 6.123 13.0225 6.75529C13.0493 7.34105 13.0548 7.51675 13.0548 9.00008C13.0548 10.4834 13.0493 10.6591 13.0225 11.2449C12.9937 11.8772 12.867 12.464 12.4156 12.9154C11.9642 13.3667 11.3774 13.4935 10.7451 13.5223C10.1594 13.549 9.98366 13.5546 8.50033 13.5546C7.01699 13.5546 6.8413 13.549 6.25553 13.5223C5.62324 13.4935 5.03644 13.3667 4.58505 12.9154C4.13366 12.464 4.00692 11.8772 3.9781 11.2449C3.95137 10.6591 3.94581 10.4834 3.94581 9.00008C3.94581 7.51675 3.95137 7.34105 3.9781 6.75529C4.00692 6.123 4.13366 5.53619 4.58505 5.0848C5.03644 4.63341 5.62324 4.50668 6.25553 4.47786C6.8413 4.45112 7.01699 4.44557 8.50033 4.44557ZM5.64755 9.00008C5.64755 7.42474 6.92463 6.1473 8.50033 6.1473C10.076 6.1473 11.3531 7.42474 11.3531 9.00008C11.3531 10.5754 10.0757 11.8529 8.50033 11.8529C6.92498 11.8529 5.64755 10.5754 5.64755 9.00008ZM6.64859 9.00008C6.64859 10.0227 7.47741 10.8518 8.50033 10.8518C9.52324 10.8518 10.3521 10.023 10.3521 9.00008C10.3521 7.97751 9.52324 7.14835 8.50033 7.14835C7.47776 7.14835 6.64859 7.97716 6.64859 9.00008ZM11.466 6.70112C11.8341 6.70112 12.1326 6.40265 12.1326 6.03446C12.1326 5.66627 11.8341 5.36779 11.466 5.36779C11.0978 5.36779 10.7993 5.66627 10.7993 6.03446C10.7993 6.40265 11.0978 6.70112 11.466 6.70112Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.125 7.00003C11.835 6.9956 10.5963 7.50436 9.68181 8.41415C8.76733 9.32394 8.25221 10.5601 8.25 11.85V16.75C8.25 16.9489 8.32902 17.1397 8.46967 17.2804C8.61032 17.421 8.80109 17.5 9 17.5H10.75C11.1642 17.5 11.5 17.1642 11.5 16.75V11.85C11.4997 11.3906 11.6948 10.9527 12.0367 10.6458C12.3786 10.3389 12.8349 10.192 13.2917 10.2417C14.13 10.3473 14.7566 11.0635 14.75 11.9084V16.75C14.75 17.1642 15.0858 17.5 15.5 17.5H17.25C17.6642 17.5 18 17.1642 18 16.75V11.85C17.9978 10.5601 17.4827 9.32394 16.5682 8.41415C15.6537 7.50436 14.415 6.9956 13.125 7.00003Z" stroke="currentColor" fill="#637381"/>
-                                    <rect x="3" y="7.75" width="3.75" height="9.75" rx="0.9"  fill="#637381"/>
-                                    <circle cx="4.875" cy="4.375" r="1.875" fill="#637381"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray6 hover:text-blue5 transition ease-in duration-300">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.23326 16.6667C9.72277 16.75 12.1402 15.823 13.9357 14.0965C15.7312 12.37 16.7522 9.99085 16.7666 7.5C17.3313 6.80117 17.7506 5.99652 17.9999 5.13333C18.0379 4.99402 17.9907 4.84537 17.8791 4.75364C17.7676 4.6619 17.6126 4.64416 17.4833 4.70833C16.8775 4.99994 16.1532 4.87251 15.6833 4.39166C15.0922 3.74444 14.2643 3.36413 13.3882 3.33744C12.5121 3.31075 11.6626 3.63995 11.0333 4.25C10.1657 5.09016 9.80204 6.32356 10.0749 7.5C7.28326 7.66666 5.3666 6.34166 3.83326 4.525C3.73914 4.4184 3.59089 4.37756 3.45545 4.4209C3.32001 4.46424 3.22302 4.58356 3.20826 4.725C2.61003 8.04347 4.13899 11.3839 7.0416 13.1C6.0913 14.1899 4.75677 14.8705 3.3166 15C3.15841 15.0262 3.03441 15.1501 3.00805 15.3083C2.98169 15.4665 3.05881 15.6239 3.19993 15.7C4.45286 16.3261 5.83262 16.6568 7.23326 16.6667Z" stroke="currentColor" fill="#637381"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div><!---item 4 end---->
-            </div>
-        </div>
-    </section><!---team section end-->
+    </section>
     <!--join section start--->
-    <section class="pt-20 pb-16">
+    <section class="pt-8 pb-16">
         <div class="container mx-auto">
             <div class="rounded-lg shadow-4xl bg-linear-primary flex flex-col lg:flex-row gap-x-16">
                 <div class="text-white py-14 pl-7 lg:pl-14 lg:max-w-[514px] xl:max-w-[677px] flex-auto">
@@ -458,7 +579,7 @@
                         <h1 class="text-base font-black opacity-40 uppercase mb-6">Product</h1>
                         <ul>
                             <li class="text-base font-normal hover:opacity-70 transition ease-in duration-300 tracking-[-1%]">
-                                <a href="x-currency.html">X-Currency</a>
+                                <a href="#">X-Currency</a>
                             </li>
                             <li class="text-base  font-normal hover:opacity-70 transition ease-in duration-300 tracking-[-1%]">
                                 <a href="#">SuperDocs</a>
